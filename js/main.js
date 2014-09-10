@@ -1,3 +1,4 @@
+/*
 function clickFunction () {
 	event.preventDefault();
 	console.log('hey there', this);	
@@ -5,3 +6,5 @@ function clickFunction () {
 };
 
 $('a').on('click', clickFunction);
+*/
+
