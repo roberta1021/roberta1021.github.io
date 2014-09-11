@@ -4,7 +4,7 @@ a{
 	display: inline-block;
     width: 700px;
     font-family: sans-serif, Helvetica, sans-serif;
-    font-size: 15pt;
+    font-size: 10pt;
     line-height: 17pt;
 }
 
@@ -19,8 +19,8 @@ ul.nav a{
 	display: inline-block;
     width: 100px;
     font-family: sans-serif, Helvetica, sans-serif;
-    font-size: 9pt;
-    line-height: 16pt;
+    font-size: 8pt;
+    line-height: 12pt;
 }
 
 ul.nav a:hover {
