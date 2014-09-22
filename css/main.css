@@ -1,3 +1,49 @@
+*{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.container{
+	width: 80%;
+	max-width: 40em;
+	margin: 0 auto;
+	background: white;
+			}
+
+.nav{
+	position: fixed;
+	background: rgba(255,255,255,0.5)
+}
+
+.nav,
+.nav li {
+		display: inline-block;
+		padding: 1%;				
+		}
+
+.nav li a{
+	text-transform: capitalize;
+	text-decoration: none;
+	color: #a9a9a9;
+	width: 100px;
+    font-family: Helvetica, sans-serif;
+    font-size: 8pt;
+    line-height: 12pt;
+    -o-transition:.3s;
+    -ms-transition:.3s;
+    -moz-transition:.3s;
+    -webkit-transition:.3s;
+    transition:.3s;	
+
+}
+		
+.nav li a:hover{
+	text-decoration: none;
+	color: #fa9797;
+}
+		
+
 a{
 	text-decoration: none;
 	color: #fa9797;
@@ -12,67 +58,138 @@ a:hover{
 	color: #a9a9a9;
 	transition:.3s;
 }
-
-
-ul.nav a{
-	text-decoration: none;
-	color: #a9a9a9;
-	display: inline-block;
-    width: 100px;
-    font-family: Helvetica, sans-serif;
-    font-size: 8pt;
-    line-height: 12pt;
-    -o-transition:.3s;
-    -ms-transition:.3s;
-    -moz-transition:.3s;
-    -webkit-transition:.3s;
-    transition:.3s;
-    }
-
-ul.nav a:hover{
-	text-decoration: none;
-	color: #fa9797;
-}
-
-ul.nav {
+    
+.masthead{
+	position: relative;
+	overflow: hidden;
+	padding-top: 2em;
+			}
+			
+.brand{
+	z-index: 1;
 	position: fixed;
-	display: inline-block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100px;
-    text-decoration: none;
-    }
+	float: left;
+	width: 30%;
+	background: #989898;
+	margin:0 0 0 5%;
+			}
 
+.site-nav{
+	float: left;
+	width: 60%;
+	margin:0 0 0 5%;
+			}
 
-ul.nav a.on{
+.nav li a.on{
 	color: #eb5252;
 }
 
 
-li{
-	padding: 10px 0 10px 0;
-}
-
 p{
+	margin-top: 100px;
 	padding-left: 100px;
-	width: 700px;
+	/* width: 700px; */
 	font-family: Helvetica, sans-serif;
 	font-size: 9pt;
 	line-height: 11pt;
 }
 
+img{
+	max-width: 100%;
+}
 
+
+/*
 img {
 	display: inline-block;
 	padding-left: 100px;
+	overflow: scroll;
 }
+*/
 
 body{
-	width: 700px;
-	display: inline-block;
+	/* display: inline-block; */
     font-family: Helvetica, sans-serif;
     font-size: 10pt;
     line-height: 14pt;
     color: #5d5c5c
 }
+
+.page{
+	overflow: hidden;
+			}
+
+
+/*
+#container {
+	width: 700px; margin: auto; overflow: hidden;
+}
+*/
+
+#column1, #column2 {
+	margin-top: 10px;
+}
+
+/* `Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+.one-column, .two-columns, .three-columns, .four-columns, .five-columns, .six-columns, .seven-columns, .eight-columns, .nine-columns,.ten-columns, .eleven-columns, .twelve-columns  {display: inline; float: left; margin-left: 10px; margin-right: 10px;} 
+
+/* `Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+.first {margin-left: 0px;} 
+.last {margin-right: 0px;} 
+
+/* `Grid >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.one-column {width: 60px;}
+
+.two-columns {width: 140px;}
+
+.three-columns {width: 220px;}
+
+.four-columns {width: 300px;}
+
+.five-columns {width: 380px;}
+
+.six-columns {width: 460px;}
+
+.seven-columns {width: 540px;}
+
+.eight-columns {width: 620px;}
+
+.nine-columns {width: 700px;}
+
+.ten-columns {width: 780px;}
+
+.eleven-columns {width: 860px;}
+
+.twelve-columns {width: 900px;}
+
+
+/* `Indents Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.indent-fourth {padding-left: 20px;}
+
+.indent-half {padding-left: 40px;}
+
+.indent-one {padding-left: 80px;}
+
+.indent-two {padding-left: 160px;}
+
+.indent-three {padding-left: 240px;}
+
+.indent-four {padding-left: 320px;}
+
+.indent-five {padding-left: 400px;}
+
+.indent-six {padding-left: 480px;}
+
+.indent-seven {padding-left: 560px;}
+
+.indent-eight {padding-left: 640px;}
+
+.indent-nine {padding-left: 720px;}
+
+.indent-ten {padding-left: 800px;}
+
+.indent-eleven {padding-left: 880px;}
