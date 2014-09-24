@@ -1,27 +1,56 @@
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	font-size: 16px;
+	line-height: 20px;
+}
+
 *{
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 	        box-sizing: border-box;
 }
 
+/*
+.intro{
+	font-size: 10px;
+	line-height: 13px;
+}
+*/
+
+.intro,
+.port
+	{
+	border-bottom: 1px solid #a9a9a9;
+}
+
+.port img{
+	float: left;
+	padding: 1%;
+}
+
 h4{
-	font-weight: 500;
-	font-size: 14px;
+	font-weight: 300;
+	font-size: 12px;
+	margin: 0;
+	text-transform: uppercase;
 }
 
 .profile img{
-	padding: 40px;
+	padding: 0 40px 40px 40px;
 	margin-left: auto;
 	margin-right: auto;
-	max-width: 75%;
+	max-width: 70%;
+	float: left;
 	}
 	
 .profile{
 	text-transform: uppercase;
 	font-size: 10px;
-	text-align: center;
+	/* text-align: center; */
 	font-family: Helvetica, sans-serif;
 	line-height: 17px;
+	float: left;
 }
 
 .container{
@@ -60,13 +89,13 @@ h4{
 		
 .nav li a:hover{
 	text-decoration: none;
-	color: #fa9797;
+	color: #c8a776;
 }
 		
 
 a{
 	text-decoration: none;
-	color: #fa9797;
+	color: #a9a9a9;
 	-o-transition:.3s;
     -ms-transition:.3s;
     -moz-transition:.3s;
@@ -75,18 +104,20 @@ a{
 
 a:hover{
 	text-decoration: none;
-	color: #a9a9a9;
+	color: #c8a776;
 	transition:.3s;
 }
     
 .masthead{
+	z-index: 1;
 	position: relative;
 	overflow: hidden;
 	padding-top: 2em;
 		}
+		
 			
 .brand{
-	z-index: 1;
+	/* z-index: 1; */
 	position: fixed;
 	float: left;
 	width: 5%;
@@ -94,14 +125,14 @@ a:hover{
 			}
 
 .site-nav{
-	z-index: 1;
+	/* z-index: 1; */
 	float: left;
 	width: 60%;
-	margin:0 0 0 10%;
+	margin:0.5% 0 0 10%;
 			}
 
 .nav li a.on{
-	color: #eb5252;
+	color: #b2905e;
 }
 
 
@@ -132,6 +163,7 @@ body{
 
 .footer{
 	font-size: 8px;
+	margin: 0;
 }
 
 
