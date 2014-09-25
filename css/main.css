@@ -23,7 +23,8 @@ Typically, that order looks like:
 
 
 body {
-	/* display: inline-block; */
+	padding: 2em 0 0 0;
+	margin: 0;
 	font-family: Helvetica, sans-serif;
 	font-size: 9pt;
 	line-height: 12pt;
@@ -267,7 +268,7 @@ p {
 	overflow: hidden;
 	position: relative;
 	z-index: 1;
-	padding-top: 2em;
+	margin-bottom: 100px;
 }
 
 
