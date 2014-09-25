@@ -1,234 +1,395 @@
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-	font-size: 16px;
-	line-height: 20px;
-}
-
-*{
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-}
-
 /*
-.intro{
-	font-size: 10px;
-	line-height: 13px;
-}
+Main.css File
+
+The order of CSS starts with generic selectors, and gets more specific,
+working its way "down" a page of code.
+
+Typically, that order looks like:
+- "helpers", like box-sizing,
+- tag styling basic styling of tags themselves (like h1, etc.),
+- objects - things like nav, and other re-usable components
+- page styles - starting from top of page and working down.
+
 */
 
-.intro,
-.port
-	{
-	border-bottom: 1px solid #a9a9a9;
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-.port img{
-	float: left;
-	padding: 1%;
-}
 
-h4{
-	font-weight: 300;
-	font-size: 12px;
+
+
+
+body {
+	padding: 2em 0 0 0;
 	margin: 0;
-	text-transform: uppercase;
-}
-
-.profile img{
-	padding: 0 40px 40px 40px;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 70%;
-	float: left;
-	}
-	
-.profile{
-	text-transform: uppercase;
-	font-size: 10px;
-	/* text-align: center; */
-	font-family: Helvetica, sans-serif;
-	line-height: 17px;
-	float: left;
-}
-
-.container{
-	width: 80%;
-	max-width: 40em;
-	margin: 0 auto;
-	background: white;
-			}
-
-.nav{
-	/* background: rgba(255,255,255,0.8) */
-}
-
-.nav,
-.nav li {
-		display: inline-block;
-		padding: 1%;				
-		}
-
-.nav li a{
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #a9a9a9;
-	width: 100px;
-    font-family: Helvetica, sans-serif;
-    font-size: 8pt;
-    line-height: 12pt;
-    -o-transition:.3s;
-    -ms-transition:.3s;
-    -moz-transition:.3s;
-    -webkit-transition:.3s;
-    transition:.3s;	
-
-}
-		
-.nav li a:hover{
-	text-decoration: none;
-	color: #c8a776;
-}
-		
-
-a{
-	text-decoration: none;
-	color: #a9a9a9;
-	-o-transition:.3s;
-    -ms-transition:.3s;
-    -moz-transition:.3s;
-    -webkit-transition:.3s;
-}
-
-a:hover{
-	text-decoration: none;
-	color: #c8a776;
-	transition:.3s;
-}
-    
-.masthead{
-	z-index: 1;
-	position: relative;
-	overflow: hidden;
-	padding-top: 2em;
-		}
-		
-			
-.brand{
-	/* z-index: 1; */
-	float: left;
-	width: 5%;
-	margin:0 0 0 5%;
-			}
-
-.site-nav{
-	/* z-index: 1; */
-	float: left;
-	width: 60%;
-	margin:0.5% 0 0 10%;
-			}
-
-.nav li a.on{
-	color: #b2905e;
-}
-
-
-p{
-	margin-top: 100px;
 	font-family: Helvetica, sans-serif;
 	font-size: 9pt;
-	line-height: 11pt;
+	line-height: 12pt;
+	color: #5d5c5c;
 }
 
-img{
+
+
+
+
+img {
 	max-width: 100%;
 }
 
 
 
-body{
-	/* display: inline-block; */
-    font-family: Helvetica, sans-serif;
-    font-size: 9pt;
-    line-height: 12pt;
-    color: #5d5c5c;
+
+
+a {
+	text-decoration: none;
+	color: #a9a9a9;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
 }
 
-.page{
-	overflow: hidden;
-			}
+a:hover {
+	text-decoration: none;
+	color: #c8a776;
+	transition: .3s;
+}
 
-.footer{
-	font-size: 8px;
+
+
+
+
+h4 {
 	margin: 0;
+	font-weight: 300;
+	font-size: 12px;
+	text-transform: uppercase;
 }
 
 
-#column1, #column2 {
-	margin-top: 10px;
+
+
+
+p {
+	font-family: Helvetica, sans-serif;
+	font-size: 9pt;
+	line-height: 11pt;
 }
+
+
+
+
 
 /* `Grid >> Global
 ----------------------------------------------------------------------------------------------------*/
-.one-column, .two-columns, .three-columns, .four-columns, .five-columns, .six-columns, .seven-columns, .eight-columns, .nine-columns,.ten-columns, .eleven-columns, .twelve-columns  {display: inline; float: left; margin-left: 10px; margin-right: 10px;} 
+.one-column,
+.two-columns,
+.three-columns,
+.four-columns,
+.five-columns,
+.six-columns,
+.seven-columns,
+.eight-columns,
+.nine-columns,
+.ten-columns,
+.eleven-columns,
+.twelve-columns {
+	display: inline;
+	float: left;
+	margin-right: 10px;
+	margin-left: 10px;
+}
 
 /* `Grid >> Children (Alpha ~ First, Omega ~ Last)
 ----------------------------------------------------------------------------------------------------*/
-.first {margin-left: 0px;} 
-.last {margin-right: 0px;} 
+.first {
+	margin-left: 0;
+}
+.last {
+	margin-right: 0;
+}
 
 /* `Grid >> 12 Columns
 ----------------------------------------------------------------------------------------------------*/
-.one-column {width: 60px;}
+.one-column {
+	width: 60px;
+}
 
-.two-columns {width: 140px;}
+.two-columns {
+	width: 140px;
+}
 
-.three-columns {width: 220px;}
+.three-columns {
+	width: 220px;
+}
 
-.four-columns {width: 300px;}
+.four-columns {
+	width: 300px;
+}
 
-.five-columns {width: 380px;}
+.five-columns {
+	width: 380px;
+}
 
-.six-columns {width: 460px;}
+.six-columns {
+	width: 460px;
+}
 
-.seven-columns {width: 540px;}
+.seven-columns {
+	width: 540px;
+}
 
-.eight-columns {width: 620px;}
+.eight-columns {
+	width: 620px;
+}
 
-.nine-columns {width: 700px;}
+.nine-columns {
+	width: 700px;
+}
 
-.ten-columns {width: 780px;}
+.ten-columns {
+	width: 780px;
+}
 
-.eleven-columns {width: 860px;}
+.eleven-columns {
+	width: 860px;
+}
 
-.twelve-columns {width: 900px;}
+.twelve-columns {
+	width: 900px;
+}
 
 
 /* `Indents Space >> 12 Columns
 ----------------------------------------------------------------------------------------------------*/
-.indent-fourth {padding-left: 20px;}
+.indent-fourth {
+	padding-left: 20px;
+}
 
-.indent-half {padding-left: 40px;}
+.indent-half {
+	padding-left: 40px;
+}
 
-.indent-one {padding-left: 80px;}
+.indent-one {
+	padding-left: 80px;
+}
 
-.indent-two {padding-left: 160px;}
+.indent-two {
+	padding-left: 160px;
+}
 
-.indent-three {padding-left: 240px;}
+.indent-three {
+	padding-left: 240px;
+}
 
-.indent-four {padding-left: 320px;}
+.indent-four {
+	padding-left: 320px;
+}
 
-.indent-five {padding-left: 400px;}
+.indent-five {
+	padding-left: 400px;
+}
 
-.indent-six {padding-left: 480px;}
+.indent-six {
+	padding-left: 480px;
+}
 
-.indent-seven {padding-left: 560px;}
+.indent-seven {
+	padding-left: 560px;
+}
 
-.indent-eight {padding-left: 640px;}
+.indent-eight {
+	padding-left: 640px;
+}
 
-.indent-nine {padding-left: 720px;}
+.indent-nine {
+	padding-left: 720px;
+}
 
-.indent-ten {padding-left: 800px;}
+.indent-ten {
+	padding-left: 800px;
+}
 
-.indent-eleven {padding-left: 880px;}
+.indent-eleven {
+	padding-left: 880px;
+}
+
+
+
+
+
+/*
+	Nav Object
+	The .nav object is a generic css class that turns a <ul> into
+	horizontal navigation.
+
+	You shouldn't style .nav directly
+	Instead, add another class, and style that.
+*/
+
+.nav {
+	padding: 0;
+	margin: 0;
+	font-size: 0; /* removes whitespace */
+	line-height: 1;
+}
+
+.nav li {
+	display: inline-block;
+}
+
+.nav li {
+	font-size: 1rem;
+	/*
+	rem is a relative unit, and means the "root" font size.
+	In this case, "root" means the <html> or <body> tag.
+	*/
+}
+
+
+
+
+
+.container {
+	width: 80%;
+	max-width: 40em;
+	margin: 0 auto;
+	background: white;
+}
+
+
+
+
+
+.masthead {
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 100px;
+}
+
+
+.brand {
+	/* z-index: 1; */
+	float: left;
+	width: 48px;
+	margin: 0 0 0 48px;
+}
+
+
+.site-nav {
+	display: block;
+	overflow: hidden;
+	padding-top: 15px; /*trying to align nav centered with logo*/
+	text-align: right;
+}
+
+.site-nav li {
+	margin-left: 10px;
+}
+
+.site-nav a {
+	width: 100px;
+	font-family: Helvetica, sans-serif;
+	font-size: 8pt;
+	line-height: 12pt;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #a9a9a9;
+	-webkit-transition: .3s;
+	-moz-transition: .3s;
+	-ms-transition: .3s;
+	-o-transition: .3s;
+	transition: .3s;
+}
+
+.site-nav a:hover {
+	text-decoration: none;
+	color: #c8a776;
+}
+
+.site-nav a.on {
+	color: #b2905e;
+}
+
+
+
+
+.page {
+	overflow: hidden;
+}
+
+
+#column1,
+#column2 {
+	margin-top: 10px;
+}
+
+
+
+
+
+.profile {
+	float: left;
+	/* text-align: center; */
+	font-family: Helvetica, sans-serif;
+	font-size: 10px;
+	line-height: 17px;
+	text-transform: uppercase;
+}
+
+.profile img {
+	float: left;
+	max-width: 70%;
+	padding: 0 40px 40px 40px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+
+
+.intro,
+.port {
+	overflow: hidden; /* clears floats */
+	border-bottom: 1px solid #a9a9a9;
+}
+
+
+.intro {
+	padding-bottom: 100px;
+	margin-bottom: 100px;
+}
+
+
+.port img {
+	float: left;
+	width: 50%;
+	padding: 1%;
+}
+
+
+
+
+
+.footer {
+	margin: 0;
+	font-size: 8px;
+}
+
+
+
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+	html {
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
