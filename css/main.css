@@ -61,7 +61,6 @@ h4{
 			}
 
 .nav{
-	position: fixed;
 	/* background: rgba(255,255,255,0.8) */
 }
 
@@ -118,7 +117,6 @@ a:hover{
 			
 .brand{
 	/* z-index: 1; */
-	position: fixed;
 	float: left;
 	width: 5%;
 	margin:0 0 0 5%;
